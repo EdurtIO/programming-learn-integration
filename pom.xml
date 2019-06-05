@@ -4,8 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.edurt.sli</groupId>
     <artifactId>spring-learn-integration</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>1.0.0</version>
+
+    <modules>
+        <module>spring-learn-integration-springboot</module>
+    </modules>
 
     <name>spring-learn-integration</name>
     <url>http://maven.apache.org</url>
