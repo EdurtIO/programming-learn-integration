@@ -38,6 +38,8 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slisa -DartifactId=spring-learn-i
 
     <artifactId>spring-learn-integration-springboot-angular</artifactId>
 
+    <name>SpringBoot整合Angular前后端开发</name>
+
     <properties>
         <!-- 系统 -->
         <system.java.version>1.8</system.java.version>
@@ -801,6 +803,8 @@ export class AppComponent {
 
     <artifactId>spring-learn-integration-springboot-angular</artifactId>
 
+    <name>SpringBoot整合Angular前后端开发</name>
+
     <properties>
         <!-- 系统 -->
         <system.java.version>1.8</system.java.version>
@@ -900,3 +904,10 @@ mvn clean package -Dmaven.test.skip=true -X
 ```bash
 java -jar target/spring-learn-integration-springboot-angular-1.0.0.jar
 ```
+
+#### 源码地址
+
+---
+
+- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/spring-learn-integration-springboot/spring-learn-integration-springboot-angular)
+- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/spring-learn-integration-springboot/spring-learn-integration-springboot-angular)

@@ -13,13 +13,12 @@
 
     <artifactId>spring-learn-integration-springboot-angular</artifactId>
 
+    <name>SpringBoot整合Angular前后端开发</name>
+
     <properties>
         <!-- 系统 -->
-        <system.java.version>1.8</system.java.version>
         <system.node.version>v8.2.1</system.node.version>
         <system.npm.version>5.4.2</system.npm.version>
-        <!-- 依赖 -->
-        <dependency.springboot.version>1.5.6.RELEASE</dependency.springboot.version>
         <!-- 插件 -->
         <plugin.maven.compiler.version>3.1</plugin.maven.compiler.version>
         <plugin.frontend.version>0.0.27</plugin.frontend.version>
@@ -29,7 +28,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${dependency.springboot.version}</version>
         </dependency>
     </dependencies>
 

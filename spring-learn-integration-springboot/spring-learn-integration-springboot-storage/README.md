@@ -1,8 +1,8 @@
-SpringBoot整合Angular前后端开发
+SpringBoot开发存储服务器
 
 ---
 
-**spring-learn-integration-springboot-angular**是SpringBoot整合angular项目的教程.
+**spring-learn-integration-springboot-storage**是使用SpringBoot开发存储服务器的教程.
 
 ### Technology distribution
 
@@ -12,7 +12,6 @@ SpringBoot整合Angular前后端开发
 |:---:|---|
 |Java|1.8+|
 |SpringBoot|1.5.x|
-|Angular|4.x.x|
 
 ### 贡献者(排名不分先后)
 
