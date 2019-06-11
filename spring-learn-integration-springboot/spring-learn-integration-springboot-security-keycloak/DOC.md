@@ -1,4 +1,4 @@
-今天我们尝试Spring Security整合Keycloak，并决定建立一个非常简单的Spring Boot微服务，使用Keycloak作为我的身份验证源，使用Spring Security处理身份验证和授权。
+今天我们尝试Spring Boot Security整合Keycloak，并决定建立一个非常简单的Spring Boot微服务，使用Keycloak作为我的身份验证源，使用Spring Security处理身份验证和授权。
 
 #### 基础环境
 

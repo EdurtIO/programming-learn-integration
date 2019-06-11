@@ -21,6 +21,7 @@
         <module>spring-learn-integration-springboot-angular</module>
         <module>spring-learn-integration-springboot-storage</module>
         <module>spring-learn-integration-springboot-security-keycloak</module>
+        <module>spring-learn-integration-springboot-scala</module>
     </modules>
 
     <properties>
