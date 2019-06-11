@@ -1,4 +1,4 @@
-今天我们尝试Spring Boot整合Angular，并决定建立一个非常简单的Spring Boot微服务，使用Angular作为前端渲编程语言进行前端页面渲染.
+今天我们尝试使用Spring Boot开发一个数据存储服务.
 
 #### 基础环境
 
