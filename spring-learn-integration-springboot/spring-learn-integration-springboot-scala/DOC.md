@@ -802,6 +802,22 @@ class UserServiceTest @Autowired()(
 }
 ```
 
+#### 打包文件部署
+
+---
+
+- 打包数据
+
+```bash
+mvn clean package -Dmaven.test.skip=true -X
+```
+
+运行打包后的文件即可
+
+```bash
+java -jar target/spring-learn-integration-springboot-scala-1.0.0.jar
+```
+
 #### 源码地址
 
 ---

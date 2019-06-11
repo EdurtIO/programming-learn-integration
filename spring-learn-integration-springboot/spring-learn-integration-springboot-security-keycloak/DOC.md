@@ -588,6 +588,22 @@ $ curl -H "Authorization: bearer $TOKEN" http://localhost:9002/user
 
 对于user用户也是如此，user用户无法访问admin接口。
 
+#### 打包文件部署
+
+---
+
+- 打包数据
+
+```bash
+mvn clean package -Dmaven.test.skip=true -X
+```
+
+运行打包后的文件即可
+
+```bash
+java -jar target/spring-learn-integration-springboot-security-keycloak-1.0.0.jar
+```
+
 #### 源码地址
 
 ---
