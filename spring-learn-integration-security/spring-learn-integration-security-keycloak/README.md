@@ -1,4 +1,4 @@
-SpringBoot整合KeyCloak权限管理
+SpringSecurity整合KeyCloak权限管理
 
 ---
 

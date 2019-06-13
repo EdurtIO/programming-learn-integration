@@ -6,11 +6,14 @@ Spring整合学习中心
 ### 整合模块
 ---
 
+- [SpringSecurity]
+
+    - [Spring-Security-KeyCloak](spring-learn-integration-security/spring-learn-integration-security-keycloak/README.md)
+
 - [SpringBoot](spring-learn-integration-springboot/README.md)
 
     - [SpringBoot-Angular](spring-learn-integration-springboot/spring-learn-integration-springboot-angular/DOC.md)
     - [SpringBoot-Storage](spring-learn-integration-springboot/spring-learn-integration-springboot-storage/DOC.md)
-    - [SpringBoot-Security-KeyCloak](spring-learn-integration-springboot/spring-learn-integration-springboot-security-keycloak/DOC.md)
     - [SpringBoot-Scala](spring-learn-integration-springboot/spring-learn-integration-springboot-scala/DOC.md)
 
 - [SpringCloud](spring-learn-integration-springcloud/README.md)

@@ -10,6 +10,8 @@
     <modules>
         <module>spring-learn-integration-springboot</module>
         <module>spring-learn-integration-springcloud</module>
+        <module>spring-learn-integration-datajpa</module>
+        <module>spring-learn-integration-security</module>
     </modules>
 
     <name>spring-learn-integration</name>
