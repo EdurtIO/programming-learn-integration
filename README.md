@@ -6,7 +6,7 @@ Spring整合学习中心
 ### 整合模块
 ---
 
-- [SpringSecurity]
+- [SpringSecurity](spring-learn-integration-security/README.md)
 
     - [Spring-Security-KeyCloak](spring-learn-integration-security/spring-learn-integration-security-keycloak/README.md)
 
