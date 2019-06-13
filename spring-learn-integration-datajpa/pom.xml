@@ -13,5 +13,6 @@
 
     <artifactId>spring-learn-integration-datajpa</artifactId>
 
+    <name>Spring DataJPA教程</name>
 
 </project>

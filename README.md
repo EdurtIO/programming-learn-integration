@@ -6,19 +6,19 @@ Spring整合学习中心
 ### 整合模块
 ---
 
-- [SpringSecurity](spring-learn-integration-security/README.md)
+- [SpringSecurity教程](spring-learn-integration-security/README.md)
 
-    - [Spring-Security-KeyCloak](spring-learn-integration-security/spring-learn-integration-security-keycloak/DOC.md)
+    - [SpringBoot整合KeyCloak权限管理教程](spring-learn-integration-security/spring-learn-integration-security-keycloak/DOC.md)
 
-- [SpringBoot](spring-learn-integration-springboot/README.md)
+- [SpringBoot教程](spring-learn-integration-springboot/README.md)
 
-    - [SpringBoot-Angular](spring-learn-integration-springboot/spring-learn-integration-springboot-angular/DOC.md)
-    - [SpringBoot-Storage](spring-learn-integration-springboot/spring-learn-integration-springboot-storage/DOC.md)
-    - [SpringBoot-Scala](spring-learn-integration-springboot/spring-learn-integration-springboot-scala/DOC.md)
+    - [SpringBoot整合Angular前后端开发教程](spring-learn-integration-springboot/spring-learn-integration-springboot-angular/DOC.md)
+    - [SpringBoot开发存储服务器教程](spring-learn-integration-springboot/spring-learn-integration-springboot-storage/DOC.md)
+    - [SpringBoot整合Scala教程](spring-learn-integration-springboot/spring-learn-integration-springboot-scala/DOC.md)
 
-- [SpringCloud](spring-learn-integration-springcloud/README.md)
+- [SpringCloud教程](spring-learn-integration-springcloud/README.md)
 
     - [SpringCloud Eureka教程](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka/DOC.md)
     - [SpringCloud Eureka教程(代码版)](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka-code/DOC.md)
 
-- [Spring DataJPA](spring-learn-integration-datajpa/README.md)
+- [Spring DataJPA教程](spring-learn-integration-datajpa/README.md)

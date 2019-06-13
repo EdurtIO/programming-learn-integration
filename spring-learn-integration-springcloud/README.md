@@ -6,5 +6,5 @@ SpringCloud整合示例
 ### 整合模块
 ---
 
-- [SpringCloud-Eureka](spring-learn-integration-springcloud-eureka/DOC.md)
-- [SpringCloud-Eureka-Code](spring-learn-integration-springcloud-eureka-code/DOC.md)
+- [SpringCloud Eureka教程](spring-learn-integration-springcloud-eureka/DOC.md)
+- [SpringCloud Eureka教程(代码版)](spring-learn-integration-springcloud-eureka-code/DOC.md)

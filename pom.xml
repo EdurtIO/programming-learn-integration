@@ -14,7 +14,7 @@
         <module>spring-learn-integration-security</module>
     </modules>
 
-    <name>spring-learn-integration</name>
+    <name>Spring系列学习教程</name>
     <url>http://maven.apache.org</url>
 
     <properties>

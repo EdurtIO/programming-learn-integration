@@ -17,5 +17,6 @@
 
     <artifactId>spring-learn-integration-security</artifactId>
 
+    <name>SpringSecurity教程</name>
 
 </project>
