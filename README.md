@@ -18,6 +18,7 @@ Spring整合学习中心
 
 - [SpringCloud](spring-learn-integration-springcloud/README.md)
 
-    - [SpringCloud-Eureka](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka/DOC.md)
+    - [SpringCloud Eureka教程](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka/DOC.md)
+    - [SpringCloud Eureka教程(代码版)](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka-code/DOC.md)
 
 - [Spring DataJPA](spring-learn-integration-datajpa/README.md)

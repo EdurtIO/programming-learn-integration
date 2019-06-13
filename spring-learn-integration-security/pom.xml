@@ -9,6 +9,10 @@
         <version>1.0.0</version>
     </parent>
 
+    <modules>
+        <module>spring-learn-integration-security-keycloak</module>
+    </modules>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-learn-integration-security</artifactId>
