@@ -22,3 +22,5 @@ Spring整合学习中心
     - [SpringCloud Eureka教程(代码版)](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka-code/DOC.md)
 
 - [Spring DataJPA教程](spring-learn-integration-datajpa/README.md)
+
+    - [Spring DataJPA Redis教程(基础版)](spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis/DOC.md)

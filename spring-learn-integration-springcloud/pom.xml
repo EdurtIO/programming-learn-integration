@@ -22,7 +22,6 @@
     </modules>
 
     <properties>
-        <dependency.spring.boot.common.version>2.0.3.RELEASE</dependency.spring.boot.common.version>
         <dependency.spring.cloud.common.version>Finchley.RELEASE</dependency.spring.cloud.common.version>
     </properties>
 

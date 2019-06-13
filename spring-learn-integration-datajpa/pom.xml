@@ -12,7 +12,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>spring-learn-integration-datajpa</artifactId>
+    <packaging>pom</packaging>
 
     <name>Spring DataJPA教程</name>
+
+    <modules>
+        <module>spring-learn-integration-datajpa-redis</module>
+    </modules>
 
 </project>
