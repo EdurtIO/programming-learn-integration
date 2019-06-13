@@ -8,7 +8,7 @@ Spring整合学习中心
 
 - [SpringSecurity](spring-learn-integration-security/README.md)
 
-    - [Spring-Security-KeyCloak](spring-learn-integration-security/spring-learn-integration-security-keycloak/README.md)
+    - [Spring-Security-KeyCloak](spring-learn-integration-security/spring-learn-integration-security-keycloak/DOC.md)
 
 - [SpringBoot](spring-learn-integration-springboot/README.md)
 
@@ -19,3 +19,5 @@ Spring整合学习中心
 - [SpringCloud](spring-learn-integration-springcloud/README.md)
 
     - [SpringCloud-Eureka](spring-learn-integration-springcloud/spring-learn-integration-springcloud-eureka/DOC.md)
+
+- [Spring DataJPA](spring-learn-integration-datajpa/README.md)
