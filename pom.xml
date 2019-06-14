@@ -25,6 +25,7 @@
         <dependency.lombok.version>1.18.6</dependency.lombok.version>
         <dependency.jedis.version>2.9.0</dependency.jedis.version>
         <dependency.lettuce.version>5.1.3.RELEASE</dependency.lettuce.version>
+        <dependency.spring.data.jpa.version>2.1.5.RELEASE</dependency.spring.data.jpa.version>
     </properties>
 
     <dependencies>

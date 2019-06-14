@@ -20,7 +20,7 @@ Redis由基于key/value库的数据结构存数，以持久保存数据，并可
 - 初始化项目
 
 ```bash
-mvn archetype:generate -DgroupId=com.edurt.sli.slidr -DartifactId=spring-learn-integration-datajpa-redis -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0.0 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.edurt.sli.slidrt -DartifactId=spring-learn-integration-datajpa-redis-template -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0.0 -DinteractiveMode=false
 ```
 
 - 修改pom.xml增加redis的支持
@@ -39,9 +39,9 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slidr -DartifactId=spring-learn-i
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-learn-integration-datajpa-redis</artifactId>
+    <artifactId>spring-learn-integration-datajpa-redis-template</artifactId>
 
-    <name>Spring DataJPA Redis教程(基础版)</name>
+    <name>Spring DataJPA Redis教程(Template版)</name>
 
     <dependencies>
         <dependency>
@@ -50,9 +50,9 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slidr -DartifactId=spring-learn-i
             <version>${dependency.springboot2.common.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-            <version>${dependency.springboot2.common.version}</version>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-redis</artifactId>
+            <version>${dependency.spring.data.jpa.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -63,11 +63,6 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slidr -DartifactId=spring-learn-i
             <groupId>redis.clients</groupId>
             <artifactId>jedis</artifactId>
             <version>${dependency.jedis.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.lettuce</groupId>
-            <artifactId>lettuce-core</artifactId>
-            <version>${dependency.lettuce.version}</version>
         </dependency>
     </dependencies>
 
@@ -96,7 +91,7 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slidr -DartifactId=spring-learn-i
 </project>
 ```
 
-`spring-boot-starter-data-redis`整合Redis需要的依赖包,或者单独使用`spring-data-redis`和`jedis`依赖包
+`spring-data-redis`整合Redis需要的依赖包
 
 - 一个简单的应用类
 
@@ -118,24 +113,24 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slidr -DartifactId=spring-learn-i
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.edurt.sli.slidr;
+package com.edurt.sli.slidrt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * <p> SpringBootDataJPARedisIntegration </p>
- * <p> Description : SpringBootDataJPARedisIntegration </p>
+ * <p> SpringBootDataJPARedisTemplateIntegration </p>
+ * <p> Description : SpringBootDataJPARedisTemplateIntegration </p>
  * <p> Author : qianmoQ </p>
  * <p> Version : 1.0 </p>
- * <p> Create Time : 2019-06-14 00:44 </p>
+ * <p> Create Time : 2019-06-14 14:24 </p>
  * <p> Author Email: <a href="mailTo:shichengoooo@163.com">qianmoQ</a> </p>
  */
 @SpringBootApplication
-public class SpringBootDataJPARedisIntegration {
+public class SpringBootDataJPARedisTemplateIntegration {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootDataJPARedisIntegration.class, args);
+        SpringApplication.run(SpringBootDataJPARedisTemplateIntegration.class, args);
     }
 
 }
@@ -145,23 +140,7 @@ public class SpringBootDataJPARedisIntegration {
 
 ---
 
-- 在resources资源目录下创建一个application.properties的配置文件,内容如下
-
-```bash
-spring.redis.host=localhost
-spring.redis.port=6379
-spring.redis.database=0
-spring.redis.jedis.pool.max-active=8
-spring.redis.jedis.pool.max-wait=1ms
-spring.redis.lettuce.pool.max-active=8
-spring.redis.jedis.pool.min-idle=0
-```
-
-#### 操作Redis数据
-
----
-
-- 在`/src/main/java/com/edurt/sli/slidr`目录下创建*model*目录,并在该目录下新建RedisModel文件
+- 在`/src/main/java/com/edurt/sli/slidr`目录下创建*config*目录,并在该目录下新建RedisConfig文件
 
 ```java
 /**
@@ -181,85 +160,120 @@ spring.redis.jedis.pool.min-idle=0
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.edurt.sli.slidr.model;
+package com.edurt.sli.slidrt.config;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.stereotype.Component;
+
+/**
+ * <p> RedisConfig </p>
+ * <p> Description : RedisConfig </p>
+ * <p> Author : qianmoQ </p>
+ * <p> Version : 1.0 </p>
+ * <p> Create Time : 2019-06-14 14:26 </p>
+ * <p> Author Email: <a href="mailTo:shichengoooo@163.com">qianmoQ</a> </p>
+ */
+@Component
+@Configuration
+@ConfigurationProperties(prefix = "custom.redis")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class RedisConfig {
+
+    private String server; // redis服务器地址
+    private Integer port; // redis服务器地址
+
+    @Qualifier(value = "redisTemplate")
+    @Bean
+    public StringRedisTemplate redisTemplate() {
+        StringRedisTemplate template = new StringRedisTemplate();
+        JedisConnectionFactory factory = jedisConnectionFactory();
+        template.setConnectionFactory(factory);
+        return template;
+    }
+
+    @Bean
+    public JedisConnectionFactory jedisConnectionFactory() {
+        JedisConnectionFactory factory = new JedisConnectionFactory(new RedisStandaloneConfiguration(server, port));
+        factory.afterPropertiesSet();
+        return factory;
+    }
+
+}
+```
+
+- 在resources资源目录下创建一个application.properties的配置文件,内容如下
+
+```bash
+custom.redis.server=localhost
+custom.redis.port=6379
+```
+
+
+#### 操作Redis数据
+
+---
+
+- 在`/src/main/java/com/edurt/sli/slidrt`目录下创建*model*目录,并在该目录下新建RedisTemplateModel文件
+
+```java
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * <p>
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * <p>
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.edurt.sli.slidrt.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.redis.core.RedisHash;
 
 /**
- * <p> RedisModel </p>
- * <p> Description : RedisModel </p>
+ * <p> RedisTemplateModel </p>
+ * <p> Description : RedisTemplateModel </p>
  * <p> Author : qianmoQ </p>
  * <p> Version : 1.0 </p>
- * <p> Create Time : 2019-06-14 01:06 </p>
+ * <p> Create Time : 2019-06-14 14:35 </p>
  * <p> Author Email: <a href="mailTo:shichengoooo@163.com">qianmoQ</a> </p>
  */
-@RedisHash(value = "Redis")
 @Data
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-public class RedisModel {
+public class RedisTemplateModel {
 
-    @Id
     private String id;
     private String name;
 
 }
 ```
 
-`@RedisHash`为每个数据库创建域类的空子类。
-
-`@Id`注解的属性和被命名为id的属性会被当作标识属性
-
-- 在`/src/main/java/com/edurt/sli/slidr`目录下创建*repository*目录,并在该目录下新建RedisSupport文件
-
-```java
-/**
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- * <p>
- * http://www.apache.org/licenses/LICENSE-2.0
- * <p>
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-package com.edurt.sli.slidr.repository;
-
-import com.edurt.sli.slidr.model.RedisModel;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-
-/**
- * <p> RedisSupport </p>
- * <p> Description : RedisSupport </p>
- * <p> Author : qianmoQ </p>
- * <p> Version : 1.0 </p>
- * <p> Create Time : 2019-06-14 00:59 </p>
- * <p> Author Email: <a href="mailTo:shichengoooo@163.com">qianmoQ</a> </p>
- */
-@Repository
-public interface RedisSupport extends CrudRepository<RedisModel, String> {
-}
-```
-
-在`CrudRepository`中提供了一些基础的增删改查的功能.
-
 - 测试增删改查的功能
 
-在`/src/main/java/com/edurt/sli/slidr`目录下创建*controller*目录,并在该目录下新建RedisController文件
+在`/src/main/java/com/edurt/sli/slidrt`目录下创建*controller*目录,并在该目录下新建RedisTemplateController文件
 
 ```java
 /**
@@ -279,46 +293,50 @@ public interface RedisSupport extends CrudRepository<RedisModel, String> {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.edurt.sli.slidr.controller;
+package com.edurt.sli.slidrt.controller;
 
-import com.edurt.sli.slidr.model.RedisModel;
-import com.edurt.sli.slidr.repository.RedisSupport;
+import com.edurt.sli.slidrt.model.RedisTemplateModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * <p> RedisController </p>
- * <p> Description : RedisController </p>
+ * <p> RedisTemplateController </p>
+ * <p> Description : RedisTemplateController </p>
  * <p> Author : qianmoQ </p>
  * <p> Version : 1.0 </p>
- * <p> Create Time : 2019-06-14 01:05 </p>
+ * <p> Create Time : 2019-06-14 14:38 </p>
  * <p> Author Email: <a href="mailTo:shichengoooo@163.com">qianmoQ</a> </p>
  */
 @RestController
-@RequestMapping(value = "redis")
-public class RedisController {
+@RequestMapping(value = "redis/template")
+public class RedisTemplateController {
 
     @Autowired
-    private RedisSupport support;
+    private StringRedisTemplate stringRedisTemplate;
+
+    private static String KEY = "RedisTemplate";
 
     @GetMapping
     public Object get() {
-        return this.support.findAll();
+        return this.stringRedisTemplate.opsForHash().entries(KEY);
     }
 
     @PostMapping
-    public Object post(@RequestBody RedisModel mode) {
-        return this.support.save(mode);
+    public Object post(@RequestBody RedisTemplateModel model) {
+        this.stringRedisTemplate.opsForHash().put(KEY, model.getId(), model.getName());
+        return "SUCCESS";
     }
 
     @PutMapping
-    public Object put(@RequestBody RedisModel mode) {
-        return this.support.save(mode);
+    public Object put(@RequestBody RedisTemplateModel model) {
+        this.stringRedisTemplate.opsForHash().put(KEY, model.getId(), model.getName());
+        return "SUCCESS";
     }
 
     @DeleteMapping
     public Object delete(@RequestParam String id) {
-        this.support.deleteById(id);
+        this.stringRedisTemplate.opsForHash().delete(KEY, id);
         return "SUCCESS";
     }
 
@@ -328,37 +346,36 @@ public class RedisController {
 添加数据
 
 ```bash
-shicheng@shichengdeMacBook-Pro ~> curl -X POST http://localhost:8080/redis -H 'Content-Type:application/json' -d '{"id": "1", "name": "Hello Redis"}'
-{"id":"1","name":"Hello Redis"}⏎
+shicheng@localhost ~> curl -X POST http://localhost:8080/redis/template -H 'Content-Type:application/json' -d '{"id": "1", "name": "Hello Redis"}'
+SUCCESS⏎
 ```
 
-![-w1000](http://image.cdn.ttxit.com/2019-06-14-15604468968085.jpg)
+![-w1000](http://image.cdn.ttxit.com/2019-06-14-15604950390771.jpg)
 
 修改数据
 
 ```bash
-shicheng@shichengdeMacBook-Pro ~> curl -X PUT http://localhost:8080/redis -H 'Content-Type:application/json' -d '{"id": "1", "name": "Hello Redis Modfiy"}'
-{"id":"1","name":"Hello Redis Modfiy"}⏎
+shicheng@localhost ~> curl -X PUT http://localhost:8080/redis/template -H 'Content-Type:application/json' -d '{"id": "1", "name": "Hello Redis Modfiy"}'
+SUCCESS⏎
 ```
 
-![-w1000](http://image.cdn.ttxit.com/2019-06-14-15604469283895.jpg)
+![-w1000](http://image.cdn.ttxit.com/2019-06-14-15604950720778.jpg)
 
 获取数据
 
 ```bash
-shicheng@shichengdeMacBook-Pro ~> curl -X GET http://localhost:8080/redis
+shicheng@shichengdeMacBook-Pro ~> curl -X GET http://localhost:8080/redis/template
 [{"id":"1","name":"Hello Redis Modfiy"}]⏎
 ```
 
 删除数据
 
 ```bash
-shicheng@shichengdeMacBook-Pro ~> curl -X DELETE 'http://localhost:8080/redis?id=1'
+shicheng@shichengdeMacBook-Pro ~> curl -X DELETE 'http://localhost:8080/redis/template?id=1'
 SUCCESS⏎
 ```
 
-![-w1000](http://image.cdn.ttxit.com/2019-06-14-15604470076677.jpg)
-
+![-w1000](http://image.cdn.ttxit.com/2019-06-14-15604951147746.jpg)
 
 #### 打包文件部署
 
@@ -373,12 +390,12 @@ mvn clean package -Dmaven.test.skip=true -X
 运行打包后的文件即可
 
 ```bash
-java -jar spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis/target/spring-learn-integration-datajpa-redis-1.0.0.jar
+java -jar spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis-template/target/spring-learn-integration-datajpa-redis-template-1.0.0.jar
 ```
 
 #### 源码地址
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis)
+- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis-template)
+- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/spring-learn-integration-datajpa/spring-learn-integration-datajpa-redis-template)
