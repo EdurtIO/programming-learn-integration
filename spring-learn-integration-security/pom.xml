@@ -8,9 +8,11 @@
         <groupId>com.edurt.sli</groupId>
         <version>1.0.0</version>
     </parent>
+    <packaging>pom</packaging>
 
     <modules>
         <module>spring-learn-integration-security-keycloak</module>
+        <module>spring-learn-integration-security-ldap</module>
     </modules>
 
     <modelVersion>4.0.0</modelVersion>

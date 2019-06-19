@@ -9,6 +9,7 @@ Spring整合学习中心
 - [SpringSecurity教程](spring-learn-integration-security/README.md)
 
     - [SpringBoot整合KeyCloak权限管理教程](spring-learn-integration-security/spring-learn-integration-security-keycloak/DOC.md)
+    - [SpringBoot Security Oauth2使用LDAP单点登录](spring-learn-integration-security/spring-learn-integration-security-ldap/DOC.md)
 
 - [SpringBoot教程](spring-learn-integration-springboot/README.md)
 
