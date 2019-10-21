@@ -21,6 +21,7 @@
         <module>spring-learn-integration-datajpa-redis-template</module>
         <module>spring-learn-integration-datajpa-elasticsearch</module>
         <module>spring-learn-integration-datajpa-mongodb</module>
+        <module>spring-learn-integration-datajpa-mongodb-template</module>
     </modules>
 
 </project>

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>spring-learn-integration-springboot</artifactId>
+        <artifactId>spring-learn-integration-security</artifactId>
         <groupId>com.edurt.sli</groupId>
         <version>1.0.0</version>
     </parent>
@@ -19,6 +19,7 @@
         <!-- dependency config -->
         <dependency.lombox.version>1.16.16</dependency.lombox.version>
         <dependency.keycloak.version>3.1.0.Final</dependency.keycloak.version>
+        <dependency.springboot.version>1.5.14.RELEASE</dependency.springboot.version>
         <!-- environment config -->
         <environment.compile.java.version>1.8</environment.compile.java.version>
         <!-- reporting config -->
@@ -36,10 +37,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${dependency.springboot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+            <version>${dependency.springboot.version}</version>
         </dependency>
         <!-- keycloak -->
         <dependency>
