@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>spring-learn-integration</artifactId>
+        <groupId>com.edurt.sli</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>spring-learn-integration-datajpa</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Spring DataJPA教程</name>
+
+    <modules>
+        <module>datajpa-redis</module>
+        <module>datajpa-redis-template</module>
+        <module>datajpa-elasticsearch</module>
+        <module>datajpa-mongodb</module>
+        <module>datajpa-mongodb-template</module>
+        <module>datajpa-redis-action</module>
+    </modules>
+
+</project>

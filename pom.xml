@@ -8,10 +8,10 @@
     <version>1.0.0</version>
 
     <modules>
-        <module>spring-learn-integration-springboot</module>
-        <module>spring-learn-integration-springcloud</module>
-        <module>spring-learn-integration-datajpa</module>
-        <module>spring-learn-integration-security</module>
+        <module>springboot</module>
+        <module>springcloud</module>
+        <module>datajpa</module>
+        <module>security</module>
     </modules>
 
     <name>Spring系列学习教程</name>
