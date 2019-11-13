@@ -12,3 +12,4 @@ Spring DataJPA整合示例
 - [Spring DataJPA ElasticSearch教程(基础版)](datajpa-elasticsearch/DOC.md)
 - [Spring DataJPA MongoDB教程(基础版)](datajpa-mongodb/DOC.md)
 - [Spring DataJPA MongoDB教程(Template版)](datajpa-mongodb-template/DOC.md)
+- [Spring DataJPA JDBC教程(基础版)](datajpa-jdbc/DOC.md)

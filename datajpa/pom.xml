@@ -23,6 +23,7 @@
         <module>datajpa-mongodb</module>
         <module>datajpa-mongodb-template</module>
         <module>datajpa-redis-action</module>
+        <module>datajpa-jdbc</module>
     </modules>
 
 </project>

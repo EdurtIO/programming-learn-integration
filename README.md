@@ -30,3 +30,4 @@ Spring整合学习中心
     - [Spring DataJPA ElasticSearch教程(基础版)](datajpa/datajpa-elasticsearch/DOC.md)
     - [Spring DataJPA MongoDB教程(基础版)](datajpa/datajpa-mongodb/DOC.md)
     - [Spring DataJPA MongoDB教程(Template版)](datajpa/datajpa-mongodb-template/DOC.md)
+    - [Spring DataJPA JDBC教程(基础版)](datajpa/datajpa-jdbc/DOC.md)
