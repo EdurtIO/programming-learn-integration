@@ -14,6 +14,7 @@
     <modules>
         <module>security-keycloak</module>
         <module>security-ldap</module>
+        <module>security-jwt</module>
     </modules>
 
     <modelVersion>4.0.0</modelVersion>

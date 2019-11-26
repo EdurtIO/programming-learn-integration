@@ -8,3 +8,4 @@ SpringSecurity整合示例
 
  - [SpringBoot整合KeyCloak权限管理教](security-keycloak/DOC.md)
  - [SpringBoot Security使用LDAP单点登录](security-ldap/DOC.md)
+ - [SpringBoot Security整合JWT授权RestAPI](security-jwt/DOC.md)

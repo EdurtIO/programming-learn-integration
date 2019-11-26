@@ -10,6 +10,7 @@ Spring整合学习中心
 
     - [SpringBoot整合KeyCloak权限管理教程](security/security-keycloak/DOC.md)
     - [SpringBoot Security使用LDAP单点登录](security/security-ldap/DOC.md)
+    - [SpringBoot Security整合JWT授权RestAPI](security/security-jwt/DOC.md)
 
 - [SpringBoot教程](springboot/README.md)
 
