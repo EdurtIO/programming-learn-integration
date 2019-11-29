@@ -19,6 +19,7 @@ Spring整合学习中心
     - [SpringBoot整合Scala教程](springboot/springboot-scala/DOC.md)
     - [SpringBoot整合MyBatis教程](springboot/springboot-mybatis/README.md)
         - [SpringBoot整合MyBatis教程(注解版)](springboot/springboot-mybatis/mybatis-annotations/DOC.md)
+        - [SpringBoot整合MyBatis教程(PageHelper版)](springboot/springboot-mybatis/mybatis-pagehelper/DOC.md)
 
 - [SpringCloud教程](springcloud/README.md)
 

@@ -11,3 +11,5 @@ SpringBoot整合示例
 - [SpringBoot整合Scala教程](springboot-scala/DOC.md)
 - [SpringBoot整合MyBatis教程](springboot-mybatis/README.md)
     - [SpringBoot整合MyBatis教程(注解版)](springboot-mybatis/mybatis-annotations/DOC.md)
+    - [SpringBoot整合MyBatis教程(PageHelper版)](springboot-mybatis/mybatis-pagehelper/DOC.md)
+    

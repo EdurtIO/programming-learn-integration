@@ -19,7 +19,7 @@
 - 初始化项目
 
 ```bash
-mvn archetype:generate -DgroupId=com.edurt.sli.slisma -DartifactId=spring-learn-integration-springboot-mybatis-annotations-DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0.0 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.edurt.sli.slisma -DartifactId=spring-learn-integration-springboot-mybatis-annotations -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0.0 -DinteractiveMode=false
 ```
 
 - 修改pom.xml增加MyBatis
@@ -148,7 +148,7 @@ create table user (
 
 我们运行该sql文件进行创建数据库/数据表操作.
 
-##### 配置MyBatis数据源
+#### 配置MyBatis数据源
 
 ---
 

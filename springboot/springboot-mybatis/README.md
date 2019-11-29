@@ -8,3 +8,4 @@ SpringBoot MyBatis整合教程
 ---
 
 - [SpringBoot整合MyBatis教程(注解版)](mybatis-annotations/DOC.md)
+- [SpringBoot整合MyBatis教程(PageHelper版)](mybatis-pagehelper/DOC.md)

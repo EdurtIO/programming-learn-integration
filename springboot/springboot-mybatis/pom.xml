@@ -18,6 +18,7 @@
 
     <modules>
         <module>mybatis-annotations</module>
+        <module>mybatis-pagehelper</module>
     </modules>
 
 </project>
