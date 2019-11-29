@@ -21,6 +21,7 @@
         <module>springboot-angular</module>
         <module>springboot-storage</module>
         <module>springboot-scala</module>
+        <module>springboot-mybatis</module>
     </modules>
 
     <properties>

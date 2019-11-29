@@ -17,6 +17,8 @@ Spring整合学习中心
     - [SpringBoot整合Angular前后端开发教程](springboot/springboot-angular/DOC.md)
     - [SpringBoot开发存储服务器教程](springboot/springboot-storage/DOC.md)
     - [SpringBoot整合Scala教程](springboot/springboot-scala/DOC.md)
+    - [SpringBoot整合MyBatis教程](springboot/springboot-mybatis/README.md)
+        - [SpringBoot整合MyBatis教程(注解版)](springboot/springboot-mybatis/mybatis-annotations/DOC.md)
 
 - [SpringCloud教程](springcloud/README.md)
 
