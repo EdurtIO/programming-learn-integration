@@ -4,22 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
-        <artifactId>spring-learn-integration-springboot</artifactId>
+        <artifactId>spring-learn-integration-springboot-mybatis</artifactId>
         <groupId>com.edurt.sli</groupId>
         <version>1.0.0</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-learn-integration-springboot-mybatis</artifactId>
+    <artifactId>spring-learn-integration-springboot-mybatis-provider</artifactId>
     <packaging>pom</packaging>
 
-    <name>SpringBoot整合MyBatis教程</name>
+    <name>SpringBoot整合MyBatis教程Provider进阶</name>
 
     <modules>
-        <module>mybatis-annotations</module>
-        <module>mybatis-pagehelper</module>
-        <module>mybatis-provider</module>
+        <module>provider-insert</module>
     </modules>
 
 </project>
