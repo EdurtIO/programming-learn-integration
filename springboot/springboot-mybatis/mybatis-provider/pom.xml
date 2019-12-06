@@ -18,6 +18,7 @@
 
     <modules>
         <module>provider-insert</module>
+        <module>provider-update-delete</module>
     </modules>
 
 </project>

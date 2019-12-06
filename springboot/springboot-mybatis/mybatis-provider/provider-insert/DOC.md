@@ -474,8 +474,8 @@ Caused by: org.apache.ibatis.binding.BindingException: Parameter 'arg0' not foun
 
 ```java
 @InsertProvider(type = UserInsertProvider.class, method = "insertModelByBatch")
-    @Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
-    Integer insertModelByBatch(@Param("list") Collection<UserModel> list);
+@Options(useGeneratedKeys = true, keyColumn = "id", keyProperty = "id")
+Integer insertModelByBatch(@Param("list") Collection<UserModel> list);
 ```
 
 把我们原来的**List<UserModel> list**替换为**@Param("list") Collection<UserModel> list**

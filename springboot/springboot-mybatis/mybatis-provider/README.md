@@ -8,3 +8,4 @@ SpringBoot MyBatis整合教程
 ---
 
 - [SpringBoot整合MyBatis教程Provider进阶(Insert)](provider-insert/DOC.md)
+- [SpringBoot整合MyBatis教程Provider进阶(Update, Delete)](provider-update-delete/DOC.md)
