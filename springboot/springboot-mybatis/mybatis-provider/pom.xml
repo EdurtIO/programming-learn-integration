@@ -19,6 +19,7 @@
     <modules>
         <module>provider-insert</module>
         <module>provider-update-delete</module>
+        <module>provider-select</module>
     </modules>
 
 </project>

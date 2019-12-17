@@ -14,4 +14,6 @@ SpringBoot整合示例
     - [SpringBoot整合MyBatis教程(PageHelper版)](springboot-mybatis/mybatis-pagehelper/DOC.md)
     - [SpringBoot整合MyBatis教程Provider进阶](springboot-mybatis/mybatis-provider/README.md)
         - [SpringBoot整合MyBatis教程Provider进阶(Insert)](springboot-mybatis/mybatis-provider/provider-insert/DOC.md)
+        - [SpringBoot整合MyBatis教程Provider进阶(Update, Delete)](springboot-mybatis/mybatis-provider/provider-update-delete/DOC.md)
+        - [SpringBoot整合MyBatis教程Provider进阶(Select)](springboot-mybatis/mybatis-provider/provider-select/DOC.md)
     

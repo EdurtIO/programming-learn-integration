@@ -2,7 +2,7 @@ SpringBoot整合MyBatis教程Provider进阶(Update, Delete)
 
 ---
 
-**spring-learn-integration-springboot-mybatis-provider-insert**是SpringBoot整合MyBatis教程进阶版的教程.我们讲诉如何使用Provider进行动态Update Delete SQL交互.
+**spring-learn-integration-springboot-mybatis-provider-update-delete**是SpringBoot整合MyBatis教程进阶版的教程.我们讲诉如何使用Provider进行动态Update Delete SQL交互.
 
 ### Technology distribution
 

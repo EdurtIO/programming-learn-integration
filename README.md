@@ -4,6 +4,7 @@ Spring Lean Integration
 Spring整合学习中心
 
 ### 整合模块
+
 ---
 
 - [SpringSecurity教程](security/README.md)
@@ -23,6 +24,7 @@ Spring整合学习中心
         - [SpringBoot整合MyBatis教程Provider进阶](springboot/springboot-mybatis/mybatis-provider/README.md)
             - [SpringBoot整合MyBatis教程Provider进阶(Insert)](springboot/springboot-mybatis/mybatis-provider/provider-insert/DOC.md)
             - [SpringBoot整合MyBatis教程Provider进阶(Update, Delete)](springboot/springboot-mybatis/mybatis-provider/provider-update-delete/DOC.md)
+            - [SpringBoot整合MyBatis教程Provider进阶(Select)](springboot/springboot-mybatis/mybatis-provider/provider-select/DOC.md)
 
 - [SpringCloud教程](springcloud/README.md)
 
