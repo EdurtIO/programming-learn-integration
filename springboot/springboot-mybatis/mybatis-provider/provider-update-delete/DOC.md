@@ -19,7 +19,7 @@
 - 初始化项目
 
 ```bash
-mvn archetype:generate -DgroupId=com.edurt.sli.slismpi -DartifactId=spring-learn-integration-springboot-mybatis-provider-update-delete -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0.0 -DinteractiveMode=false
+mvn archetype:generate -DgroupId=com.edurt.sli.slismpu -DartifactId=spring-learn-integration-springboot-mybatis-provider-update-delete -DarchetypeArtifactId=maven-archetype-quickstart -Dversion=1.0.0 -DinteractiveMode=false
 ```
 
 - 修改pom.xml增加MyBatis
@@ -105,7 +105,7 @@ mvn archetype:generate -DgroupId=com.edurt.sli.slismpi -DartifactId=spring-learn
 
 `mybatis-spring-boot-starter`:该starter是我们使用SpringBoot整合MyBatis的依赖整合包
 
-- 在`src/main/java`目录下新建*com.edurt.sli.slismpu*目录并在该目录下新建`SpringBootMyBatisProviderUpdateIntegration`类文件,在文件输入以下内容
+- 在`src/main/java`目录下新建*com.edurt.sli.slismpu*目录并在该目录下新建`SpringBootMyBatisProviderUpdateDeleteIntegration`类文件,在文件输入以下内容
 
 ```java
 package com.edurt.sli.slismpu;
