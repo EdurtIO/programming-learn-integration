@@ -12,6 +12,7 @@
         <module>springcloud</module>
         <module>datajpa</module>
         <module>security</module>
+        <module>guice</module>
     </modules>
 
     <name>Spring系列学习教程</name>

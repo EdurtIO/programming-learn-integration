@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>spring-learn-integration</artifactId>
+        <groupId>com.edurt.sli</groupId>
+        <version>1.0.0</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>learn-integration-guice</artifactId>
+    <groupId>com.edurt.sli.guice</groupId>
+
+    <name>Guice系列整合教程</name>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>binder</module>
+    </modules>
+
+</project>
