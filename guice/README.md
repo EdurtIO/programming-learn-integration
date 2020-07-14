@@ -16,3 +16,4 @@ Guice系列整合教程.
 ---
 
  - [Guice依赖注入(一)](binder/DOC.md)
+ - [Guice依赖注入(构造函数注入)](binder-constructor/DOC.md)

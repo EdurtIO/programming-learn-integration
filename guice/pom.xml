@@ -19,6 +19,7 @@
 
     <modules>
         <module>binder</module>
+        <module>binder-constructor</module>
     </modules>
 
 </project>
