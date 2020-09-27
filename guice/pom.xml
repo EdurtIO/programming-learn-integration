@@ -20,6 +20,7 @@
     <modules>
         <module>binder</module>
         <module>binder-constructor</module>
+        <module>binder-multiple</module>
     </modules>
 
 </project>

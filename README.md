@@ -45,5 +45,6 @@ Spring整合学习中心
 
     - [Guice依赖注入(一)](guice/binder/DOC.md)
     - [Guice依赖注入(构造函数注入)](guice/binder-constructor/DOC.md)
+    - [Guice依赖注入(接口多实现)](guice/binder-multiple/DOC.md)
 
     
