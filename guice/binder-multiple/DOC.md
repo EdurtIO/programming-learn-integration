@@ -366,4 +366,3 @@ java -jar target/guice-binder-multiple-1.0.0.jar
 
 ---
 - [GitHub](https://github.com/EdurtIO/spring-learn-integration/tree/master/guice/binder-multiple)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/guice/binder-multiple)

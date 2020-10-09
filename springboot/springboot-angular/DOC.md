@@ -913,5 +913,4 @@ java -jar target/spring-learn-integration-springboot-angular-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-angular)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-angular)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-angular)

@@ -503,5 +503,4 @@ java -jar target/spring-learn-integration-springboot-storage-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-storage)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-storage)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-storage)

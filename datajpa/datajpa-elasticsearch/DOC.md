@@ -386,5 +386,4 @@ java -jar target/spring-learn-integration-datajpa-elasticsearch-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-elasticsearch)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-elasticsearch)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/datajpa/datajpa-elasticsearch)

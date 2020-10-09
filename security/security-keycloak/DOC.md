@@ -608,5 +608,4 @@ java -jar target/spring-learn-integration-springboot-security-keycloak-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/security/security-keycloak)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/security/security-keycloak)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/security/security-keycloak)

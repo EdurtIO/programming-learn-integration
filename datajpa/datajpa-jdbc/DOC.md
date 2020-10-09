@@ -418,5 +418,4 @@ Hibernate: create table jdbc (id bigint not null auto_increment, context varchar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-jdbc)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-jdbc)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/datajpa/datajpa-jdbc)

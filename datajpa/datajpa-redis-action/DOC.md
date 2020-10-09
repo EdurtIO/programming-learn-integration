@@ -651,5 +651,4 @@ java -jar target/spring-learn-integration-datajpa-redis-action-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-redis-action)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-redis-action)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/datajpa/datajpa-redis-action)

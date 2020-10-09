@@ -436,5 +436,4 @@ java -jar target/spring-learn-integration-springboot-mybatis-provider-select-1.0
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-provider/provider-select)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-provider/provider-select)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-provider/provider-select)

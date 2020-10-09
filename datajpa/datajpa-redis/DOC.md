@@ -380,5 +380,4 @@ java -jar target/spring-learn-integration-datajpa-redis-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-redis)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-redis)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/datajpa/datajpa-redis)

@@ -360,5 +360,4 @@ java -jar target/spring-learn-integration-datajpa-mongodb-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-mongodb)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/datajpa/datajpa-mongodb)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/datajpa/datajpa-mongodb)

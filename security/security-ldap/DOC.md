@@ -377,5 +377,4 @@ java -jar target/spring-learn-integration-security-ldap-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/security/security-ldap)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/security/security-ldap)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/security/security-ldap)

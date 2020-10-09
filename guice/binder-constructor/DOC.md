@@ -334,5 +334,4 @@ java -jar target/guice-binder-constructor-1.0.0.jar
 #### 源码地址
 
 ---
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/guice/guice-binder-constructor)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/guice/guice-binder-constructor)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/guice/guice-binder-constructor)

@@ -822,5 +822,4 @@ java -jar target/spring-learn-integration-springboot-scala-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-scala)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-scala)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-scala)

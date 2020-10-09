@@ -677,5 +677,4 @@ java -jar target/spring-learn-integration-security-jwt-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/security/security-jwt)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/security/security-jwt)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/security/security-jwt)

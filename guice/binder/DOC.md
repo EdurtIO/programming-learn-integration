@@ -248,5 +248,4 @@ java -jar target/guice-binder-1.0.0.jar
 #### 源码地址
 
 ---
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/guice/binder)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/guice/binder)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/guice/binder)

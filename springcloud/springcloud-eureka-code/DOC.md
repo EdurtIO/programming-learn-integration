@@ -258,5 +258,4 @@ java -jar target/spring-learn-integration-springcloud-eureka-code-1.0.0.jar
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springcloud/springcloud-eureka-code)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springcloud/springcloud-eureka-code)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springcloud/springcloud-eureka-code)

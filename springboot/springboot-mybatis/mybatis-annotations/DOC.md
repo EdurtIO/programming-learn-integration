@@ -495,5 +495,4 @@ java -jar target/spring-learn-integration-springboot-mybatis-annotations-1.0.0.j
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-annotations)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-annotations)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-annotations)

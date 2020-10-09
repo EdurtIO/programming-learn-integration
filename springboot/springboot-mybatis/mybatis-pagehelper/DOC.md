@@ -449,5 +449,4 @@ java -jar target/spring-learn-integration-springboot-mybatis-pagehelper-1.0.0.ja
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-pagehelper)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-pagehelper)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-pagehelper)

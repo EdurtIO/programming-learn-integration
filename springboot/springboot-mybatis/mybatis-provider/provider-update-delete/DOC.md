@@ -411,5 +411,4 @@ java -jar target/spring-learn-integration-springboot-mybatis-provider-update-del
 
 ---
 
-- [GitHub](https://github.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-provider/provider-update-delete)
-- [Gitee](https://gitee.com/qianmoQ/spring-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-provider/provider-update-delete)
+- [GitHub](https://github.com/EdurtIO/programming-learn-integration/tree/master/springboot/springboot-mybatis/mybatis-provider/provider-update-delete)
