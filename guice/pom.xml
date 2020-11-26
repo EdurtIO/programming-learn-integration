@@ -21,6 +21,7 @@
         <module>binder</module>
         <module>binder-constructor</module>
         <module>binder-multiple</module>
+        <module>binder-provider</module>
     </modules>
 
 </project>
