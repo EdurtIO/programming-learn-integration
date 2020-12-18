@@ -18,4 +18,5 @@ Guice系列整合教程.
  - [Guice依赖注入(一)](binder/DOC.md)
  - [Guice依赖注入(构造函数注入)](binder-constructor/DOC.md)
  - [Guice依赖注入(接口多实现)](binder-multiple/DOC.md)
+ - [Guice依赖注入(Provider)](binder-provider/DOC.md)
  - [Guice依赖注入(Scope)](binder-scope/DOC.md)
