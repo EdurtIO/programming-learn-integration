@@ -13,6 +13,7 @@
         <module>datajpa</module>
         <module>security</module>
         <module>guice</module>
+        <module>guice/binder-scope</module>
     </modules>
 
     <name>Spring系列学习教程</name>
